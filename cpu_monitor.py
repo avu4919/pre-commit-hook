@@ -16,7 +16,7 @@ def collect_metrics():
             memory_usage.set(memory_bytes)
             cpu_percent = psutil.cpu_percent(interval=1)
             cpu_usage_percent.set(cpu_percent)
-            print("this is testing for pre-commit new")
+            print("this is testing for pre-commit new 111")
         except Exception as e:
             print(f"Error collecting metrics: {e}")
         finally:
