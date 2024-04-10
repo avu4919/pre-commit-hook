@@ -20,6 +20,7 @@ def collect_metrics():
             print("this is testing for pre-commit 44444444")
             print("this is testing for pre-commit 55555555555555")
             print("this is testing for pre-commit 6666666666666666666")
+            print("this is testing for pre-commit 777777777")
         except Exception as e:
             print(f"Error collecting metrics: {e}")
         finally:
