@@ -24,7 +24,6 @@ def collect_metrics():
 
 
 def test_fun():
-    ####################333333333333##################################
     while True:
         try:
             request_count.inc()
