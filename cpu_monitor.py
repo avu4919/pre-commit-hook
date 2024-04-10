@@ -18,6 +18,7 @@ def collect_metrics():
             cpu_usage_percent.set(cpu_percent)
             print("this is testing for pre-commit")
             print("this is testing for pre-commit 44444444")
+            print("this is testing for pre-commit 55555555555555")
         except Exception as e:
             print(f"Error collecting metrics: {e}")
         finally:
