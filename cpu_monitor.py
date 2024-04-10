@@ -23,6 +23,25 @@ def collect_metrics():
         finally:
             time.sleep(1)
 
+
+def test_fun():
+    ####################333333333333##################################
+    while True:
+        try:
+            request_count.inc()
+            memory_bytes = psutil.virtual_memory().used
+            memory_usage.set(memory_bytes)
+            cpu_percent = psutil.cpu_percent(interval=1)
+            cpu_usage_percent.set(cpu_percent)
+            print("this is testing for pre-commit")
+            print("this is testing for pre-commit 22222222222222")
+            print("this is testing for pre-commit 33333333333")
+        except Exception as e:
+            print(f"Error collecting metrics: {e}")
+        finally:
+            time.sleep(1)
+
+
 if __name__ == '__main__':
     try:
         start_http_server(8001)
